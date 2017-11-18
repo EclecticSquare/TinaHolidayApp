@@ -1,0 +1,74 @@
+<Doctype! html>
+    <!-- test commit -->
+ <html>
+     <head>
+        <title>Shopper's Hero</title>
+
+        <!-- links to bootstrap, jquery and css file -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+     </head>
+
+
+
+        <body>
+            <div class="container-fluid" id="container">
+                <div class="banner" id="banner1">
+                    <h1 class="display-2" id="pageTitle">Holiday Hero</h1>
+                    <h3 id="subTitle">For the budget concious shopper</h3>
+                    <!-- User input -->
+                        <form class="nameInput">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="nameBox" placeholder="Enter name here">
+                                <span class="input-group-btn">
+                                        <button class="btn btn-secondary" type="button">ADD</button>
+                                </span>
+                            </div>
+                        </form>
+                </div> 
+            </div>       
+            
+
+            <div class="container-fluid" id="contianer2">
+                <div class="banner" id="banner2"> 
+                    <h1 class="display-4">The List of the Benevolence</h1>   
+                    <div class="nameList">
+                            <!-- APPEND NAMES HERE WITH JQUERY. THEY SHOULD MIRROR THE DROPDOWN SECTION BELOW WHEN ADD BUTTON IS CLICKED NEXT TO "ENTER NAME HERE" INPUT
+                            FOLLOW THE FORMAT BELOW, EACH PERSON'S WILL HAVE A DROPDOWN LIST TO SELECT FROM -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Lucky Reciepient's Name
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Add Item</a>
+                                <a class="dropdown-item" href="#"> Remove From List </a>
+                            </div>
+                        </div>
+                        <div class="row display" id="giftList">
+                            <div>
+                                <ul class="list-group">
+                                    <!-- THIS PORTION SHOULD BE APPENDED WITH JQUERY WHEN THE ADD BUTTON NEXT TO THE PERSONS NAME
+                                        IS CLICKED AND THE GIFT NAME SHOULD APPEAR IN THE LIST, ITEMS BELOW ARE JUST PLACE HOLDERS -->
+                                    <li class="list-group-item">Gift 1</li>
+                                    <li class="list-group-item">Gift 2</li>
+                                    <li class="list-group-item">Gift 3</li>
+                                    <li class="list-group-item">Gift 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                
+
+        </body>
+    </html> 
+</Doctype>
+
+
+
